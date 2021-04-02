@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Never Gonna Give You UP!</title>
+        <style>
+            #divv{
+                height: "100%";
+                width: "100%";
+            }
+            #baba{
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                top: 10%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="divv">
+            <video id="vid" height="100%" width="100%" src="https://cdn.discordapp.com/attachments/777475234411970560/826985789228580894/ezgif.com-gif-maker.mp4">
+            </video>
+            <p id="baba">Click me!</p>
+        </div>
+        <script>
+            p = document.getElementById('baba');
+            vid = document.getElementById('vid');
+            div = document.getElementById('divv');
+            div.addEventListener('click', () => {
+                vid.play();
+                p.style.visibility = 'hidden';
+            })
+        </script>
+        
+    </body>
+</html>
